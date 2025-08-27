@@ -94,6 +94,10 @@ Strategies:
  - As we are at the mercy of the aligners, we can improve alignment on candidate regions 
     - Re-alignment with newer options (eg minimap lr:hq, suited for reads with Phred Q > 20). Or one can optionally remap with Winnowmap as this tool depicted reduction in mapping error rate.
     - Traversal of full mm2 alignments via SA tag parsing. Group sequences by sets of aligned regions, as well as possibly merging across homologous regions using XA tags.
+    - Align reads to the reference (mm2, winnowmap) several times with different parameters.
+        - Take reference windows and cluster reads by aligned regions.
+        - Take abnormal events (e.g., aligning two similar regions on 2 different chromosomes or different strands on the same chromosome) and then feed into sequence clustering/consensus to get candidate haplotypes.
+        - Align the local reads against generated haplotypes to filter for misassemblies/low quality results.
  - Assembly of candidate regions abpoa, which can potentially provide local haplotypes. It can automatically group and generate consensus, and it's pretty fast. 
  - Define attributes of FNs to examine, then contrast attribute distribution to TPs
     - Attributes
