@@ -77,7 +77,7 @@ We have a high-quality benchmark dataset derived from assemblies
 ---
 
 ### 🗺️ **Project Roadmap**
-
+![alt text](https://github.com/collaborativebioinformatics/Mosaicome/blob/main/workflow.png?raw=true)
 
 Our progress will be tracked through the following key phases and milestones.
 
