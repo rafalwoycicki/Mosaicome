@@ -35,8 +35,7 @@ This project will leverage a modern, open-source technology stack.
 | ----------------- | -------------------------------------------------- | ------------------------------------- |
 | **Language** | `Python 3.9+`                                      | Core programming language             |
 | **Data Handling** | `Pandas`, `NumPy`                                  | Data manipulation & numerical analysis|
-| **ML Framework** | `Scikit-learn`                                     | SVM implementation & model evaluation |
-| **Visualization** | `Matplotlib`, `Seaborn`                            | Plotting results & data exploration   |
+| **Visualization** | `Matplotlib`, `ggplot2`                            | Plotting results & data exploration   |
 | **Development** | `Jupyter Lab`, `VS Code`                           | Interactive analysis & coding         |
 | **Collaboration** | `Git`, `GitHub`                                    | Version control & project management  |
 
@@ -48,9 +47,9 @@ Our progress will be tracked through the following key phases and milestones.
 
 | Phase | Status | Key Milestones                                                                 |
 | :---: | :----: | ------------------------------------------------------------------------------ |
-| **1** |  `⏳`  | **Exploration & Strategy** <br> ⚫ Data Analysis <br> ⚫ Feature Engineering Plan |
-| **2** |  `⚪`  | **Development & Prototyping** <br> ⚫ Preprocessing Pipeline <br> ⚫ Initial Model Training |
-| **3** |  `⚪`  | **Refinement & Validation** <br> ⚫ Model Tuning <br> ⚫ Performance Validation <br> ⚫ Final Documentation |
+| **1** |  `⏳`  | **Exploration & Strategy** <br> ⚫ Data Analysis <br> ⚫ Steps |
+| **2** |  `⚪`  | **Development & Prototyping** <br> ⚫ Steps <br> ⚫ Steps |
+| **3** |  `⚪`  | **Refinement & Validation** <br> ⚫ Stepsg <br> ⚫ Validation <br> ⚫ Final Documentation |
 
 *Status Key: `⚪` Not Started, `⏳` In Progress, `✅` Completed*
 
