@@ -12,9 +12,11 @@ A central repository for **Team Mosaicome**'s project for the **Mosaic SV ROM Co
 
 ### **Table of Contents**
 1. [The team](#-the-team)
-2. [Tech Stack](#-tech-stack)
-3. [Project Roadmap](#-project-roadmap)
-4. [Getting Started](#-getting-started)
+2. [The Problem](#-the-problem)
+3. [Tech Stack](#-tech-stack)
+4. [Dataset](#-the-data)
+5. [Project Roadmap](#-project-roadmap)
+6. [Getting Started](#-getting-started)
 
 
 ---
@@ -37,6 +39,19 @@ A central repository for **Team Mosaicome**'s project for the **Mosaic SV ROM Co
 
 ---
 
+### ❓ **The Problem**
+
+Structural Variants (SVs) calling is a challenging process in which variants > 50bp are detected when compared to the reference genome. Many tools are available and already capable of detecting germline SVs. Low-frequency SVs (<20% VAF, aka mosaic) comprise a greater challenge as the signal is low. Our current strategy is able to detect ~50% of the SVs (VAF 5-100%) with 90% precision
+
+ONT sequencing is still under development and new models for basecalling as well as new tools for aligning showed up since May this year. Better reads quality, meaning better nucleotides calling probabilities will allow better mapping, when using suited aligning tools.
+
+Our goal is to improve recall without affecting much precision
+
+
+
+
+---
+
 ### 🛠️ **Tech Stack**
 
 This project will leverage a modern, open-source technology stack.
@@ -45,13 +60,23 @@ This project will leverage a modern, open-source technology stack.
 | ----------------- | -------------------------------------------------- | ------------------------------------- |
 | **Language** | `Python 3.12+`                                      | Core programming language             |
 | **Data Handling** | `Pandas`, `NumPy`                                  | Data manipulation & numerical analysis|
-| **Visualization** | `Matplotlib`, `ggplot2`                            | Plotting results & data exploration   |
+| **SV calling** | `Sniffles2`                                  | Data manipulation & numerical analysis|
+| **Visualization** | `Matplotlib`, `IGV`                            | Plotting results & data exploration   |
 | **Development** | `Jupyter Lab`, `VS Code`                           | Interactive analysis & coding         |
 | **Collaboration** | `Git`, `GitHub`                                    | Version control & project management  |
 
 ---
 
+### 💾 **The data**
+
+Long-read sequencing of six individuals from the HapMap project. The mix was done in-vitro so all sequencing randomness affect all samples the same
+We have a high-quality benchmark dataset derived from assemblies
+
+
+---
+
 ### 🗺️ **Project Roadmap**
+
 
 Our progress will be tracked through the following key phases and milestones.
 
@@ -62,6 +87,25 @@ Our progress will be tracked through the following key phases and milestones.
 | **3** |  `⚪`  | **Refinement & Validation** <br> ⚫ Stepsg <br> ⚫ Validation <br> ⚫ Final Documentation |
 
 *Status Key: `⚪` Not Started, `⏳` In Progress, `✅` Completed*
+
+#### **Exploration & Strategy**
+Strategies:
+ - Testing different parameters from each filter applied, some SVs were detected but filtered
+ - As we are at the mercy of the aligners, we can improve alignment on candidate regions 
+    - Re-alignment with newer options (eg minimap lr:hq, suited for reads with Phred Q > 20). Or one can optionally remap with Winnowmap as this tool depicted reduction in mapping error rate.
+    - Traversal of full mm2 alignments via SA tag parsing. Group sequences by sets of aligned regions, as well as possibly merging across homologous regions using XA tags.
+ - Assembly of candidate regions abpoa, which can potentially provide local haplotypes. It can automatically group and generate consensus, and it's pretty fast. 
+ - Define attributes of FNs to examine, then contrast attribute distribution to TPs
+    - Attributes
+        - number of supporting reads
+        - Mapping quality
+        - Avg. # of supplementary alignments for supporting reads
+
+#### **Development**
+🚧
+
+#### **Validation**
+🚧
 
 ---
 
