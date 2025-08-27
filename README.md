@@ -21,18 +21,18 @@ A central repository for **Team Mosaicome**'s project for the **Mosaic SV ROM Co
 
 ### 👥 **The Team**
 
-- lfpaulin
-- dnbaker
-- rafalwoycicki
-- Rajarshi0
-- Gedofs
-- asmmahmoud
-- chalco777
-- gobikrishnan-s3141
-- ammarasaleem123
-- gavinmonahan
-- jakekrol
-- nadiabaig
+- [Luis Paulin](https://github.com/lfpaulin)
+- [Daniel Baker](https://github.com/dnbaker)
+- [Rafal Woycicki](https://github.com/rafalwoycicki)
+- [Rajarshi Mondal](https://github.com/Rajarshi0)
+- [Gerardo Fabián](https://github.com/Gedofs)
+- [Asmaa Mahmoud](https://github.com/asmmahmoud)
+- [Adrian Chalco](https://github.com/chalco777)
+- [Gobikrishnan Subramaniam](https://github.com/gobikrishnan-s3141)
+- [Ammara Saleem](https://github.com/ammarasaleem123)
+- [Gavin Monahan](https://github.com/gavinmonahan)
+- [Jacob Krol](https://github.com/jakekrol)
+- [Neda Ghohabi Esfahani](https://github.com/nadiabaig)
 
 
 ---
