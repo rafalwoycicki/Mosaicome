@@ -34,8 +34,8 @@ A central repository for **Team Mosaicome**'s project for the **Mosaic SV ROM Co
 - [Ammara Saleem](https://github.com/ammarasaleem123)
 - [Gavin Monahan](https://github.com/gavinmonahan)
 - [Jacob Krol](https://github.com/jakekrol)
-- [Neda Ghohabi Esfahani](https://github.com/nadiabaig)
-
+- [Nadia Baig](https://github.com/nadiabaig)
+- [Neda Ghohabi Esfahani]
 
 ---
 
