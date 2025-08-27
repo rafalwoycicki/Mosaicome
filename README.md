@@ -36,6 +36,8 @@ A central repository for **Team Mosaicome**'s project for the **Mosaic SV ROM Co
 - [Jacob Krol](https://github.com/jakekrol)
 - [Nadia Baig](https://github.com/nadiabaig)
 - [Neda Ghohabi Esfahani]
+- [Qichen Fu](https://github.com/QichenFU)
+
 
 ---
 
