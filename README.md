@@ -60,6 +60,7 @@ This project will leverage a modern, open-source technology stack.
 | ----------------- | -------------------------------------------------- | ------------------------------------- |
 | **Language** | `Python 3.12+`                                      | Core programming language             |
 | **Data Handling** | `Pandas`, `NumPy`                                  | Data manipulation & numerical analysis|
+| **Alignment** | `Minimap2`, `Winnowmap`, `abpoa`                        | Data mapping & assembly             |
 | **SV calling** | `Sniffles2`                                  | Data manipulation & numerical analysis|
 | **Visualization** | `Matplotlib`, `IGV`                            | Plotting results & data exploration   |
 | **Development** | `Jupyter Lab`, `VS Code`                           | Interactive analysis & coding         |
