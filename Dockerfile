@@ -6,33 +6,26 @@ ENV DEBIAN_FRONTEND=noninteractive \
     TZ=UTC \
     PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-	CONDA_DIR=/opt/conda \
+    CONDA_DIR=/opt/conda \
     PIP_NO_CACHE_DIR=1
 
 # install dependencies
 RUN apt-get update &&  apt-get install -y --no-install-recommends build-essential \
-	python3 \
-	python3-dev \
-	python3-pip \
-	wget \
-	sudo \
-	git \
- 	minimap2 \
-	gfortran \
- 	bzip2 \
-  	ca-certificates \
-	zlib1g-dev && \
-	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# user (for better security, don't run as root)
-RUN useradd -m -s /bin/bash pymonk && \
-    echo "pymonk:password" | chpasswd && \
-    usermod -aG sudo pymonk
-USER pymonk
+        python3 \
+        python3-dev \
+        python3-pip \
+        wget \
+        sudo \
+        git \
+        minimap2 \
+        gfortran \
+        bzip2 \
+        ca-certificates \
+        zlib1g-dev && \
+        rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # workspace
-RUN mkdir -p ~/analysis && \
-chown -R pymonk ~/analysis
+RUN mkdir -p ~/analysis
 
 WORKDIR ~/analysis
 
@@ -40,7 +33,7 @@ WORKDIR ~/analysis
 # COPY requirements.txt ./
 
 # Download and install Miniforge
-RUN wget --quiet "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" -O /tmp/miniforge.sh \
+RUN wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" -O /tmp/miniforge.sh \
     && bash /tmp/miniforge.sh -b -p $CONDA_DIR \
     && rm /tmp/miniforge.sh \
     && $CONDA_DIR/bin/conda clean --all --yes
