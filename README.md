@@ -61,7 +61,7 @@ We are a multidisciplinary team of bioinformaticians, data scientists, and softw
 
 | Name                | Role / Focus Area          | GitHub Profile                               |
 | ------------------- | -------------------------- | -------------------------------------------- |
-| **[Insert Name]** | *[e.g., ML Modeling]* | `[@username](https://github.com/username)` |
+| **[Insert Name]** | *[e.g., Scientist]* | `[@username](https://github.com/username)` |
 | **[Insert Name]** | *[e.g., Data Engineering]* | `[@username](https://github.com/username)` |
 | **[Insert Name]** | *[e.g., Bioinformatics]* | `[@username](https://github.com/username)` |
 | **[Insert Name]** | *[e.g., Visualization]* | `[@username](https://github.com/username)` |
