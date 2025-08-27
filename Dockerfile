@@ -14,7 +14,7 @@ RUN apt-get update &&  apt-get install -y --no-install-recommends build-essentia
 	python3 \
 	python3-dev \
 	python3-pip \
-	curl \
+	wget \
 	sudo \
 	git \
  	minimap2 \
@@ -40,7 +40,7 @@ WORKDIR ~/analysis
 # COPY requirements.txt ./
 
 # Download and install Miniforge
-RUN wget wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" -O /tmp/miniforge.sh \
+RUN wget --quiet "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" -O /tmp/miniforge.sh \
     && bash /tmp/miniforge.sh -b -p $CONDA_DIR \
     && rm /tmp/miniforge.sh \
     && $CONDA_DIR/bin/conda clean --all --yes
