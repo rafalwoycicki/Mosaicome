@@ -29,12 +29,13 @@ A central repository for **Team Mosaicome**'s project for the **Mosaic SV ROM Co
 - [Rajarshi Mondal](https://github.com/Rajarshi0)
 - [Gerardo Fabián](https://github.com/Gedofs)
 - [Asmaa Mahmoud](https://github.com/asmmahmoud)
+- [Nadia Baig](https://github.com/nadiabaig)
 - [Adrian Chalco](https://github.com/chalco777)
 - [Gobikrishnan Subramaniam](https://github.com/gobikrishnan-s3141)
 - [Ammara Saleem](https://github.com/ammarasaleem123)
 - [Gavin Monahan](https://github.com/gavinmonahan)
 - [Jacob Krol](https://github.com/jakekrol)
-- [Neda Ghohabi Esfahani](https://github.com/nadiabaig)
+- [Neda Ghohabi Esfahani](https://github.com/nedaghohabi)
 
 
 ---
